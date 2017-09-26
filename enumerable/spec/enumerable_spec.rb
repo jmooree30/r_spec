@@ -6,11 +6,11 @@ describe "my version of the enumerable methods" do
 
   describe "my_each" do
     context "performs block on given elements" do
-	  it "returns each element" do
-	  	array.my_each {|i| answer << i}
-	    expect(answer).to eql([1,2,3,4,5])
-	  end 
-	end
+      it "returns each element" do
+        array.my_each {|i| answer << i}
+	   expect(answer).to eql([1,2,3,4,5])
+      end 
+    end
   end
   
   describe "my_each_with_index" do
@@ -50,7 +50,7 @@ describe "my version of the enumerable methods" do
   end 
 
   describe "my_none?" do 
-  	context "performs block on given elements" do 
+    context "performs block on given elements" do 
       it "returns true if no elements match the block conditions" do 
         answer = array.my_none? {|i| i > 8}
         expect(answer).to be true 
